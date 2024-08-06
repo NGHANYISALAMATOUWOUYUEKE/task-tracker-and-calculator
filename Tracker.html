@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="Tracker.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="list">
-            <form >
-                <input type="date" id="date" >
+            <form>
+                <input type="date" id="date">
                 <input type="text" id="detail" placeholder="Enter task">
-                <input type="number"  id="amount" placeholder="Enter amout" min="25">
-                <button type="button" id="button" onclick="submit()">Addtask</button>
+                <button type="submit" id="button">Addtask</button>
             </form>
         </div>
-        <ul id="view">
+        <div class="displaylist">
+            <ul class="view">
+                <!-- <div class="todo">
 
-        </ul>
+                    <li>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </li>
+                    <li>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </li>
+                </div>
+                <div class="todo">
+                </div> -->
+            </ul>
+        </div>
     </div>
     <script src="Tracker.js"></script>
 </body>
+
 </html>
